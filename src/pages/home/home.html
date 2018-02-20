@@ -1,0 +1,56 @@
+<!--ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header-->
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 class="heightFull">
+        <ion-header>
+          <ion-navbar>
+            <ion-title>
+              <div class="logo_somostech"></div>
+            </ion-title>
+          </ion-navbar>
+          <ion-toolbar>
+            <ion-title>Subheader</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <div class="video-container heightFull">
+          <video fullscreen="fullscreen" autoplay="false" (ended)="videoEnded()" controls width="100%" height="100%">
+           <source src="assets/videos/video.mp4" type="video/mp4">
+         </video>
+        </div>
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 class="heightFull" style="background-color:#fff;">
+        <ion-header>
+          <ion-navbar>
+            <ion-title>
+              <div class="logo_accionestech"></div>
+            </ion-title>
+          </ion-navbar>
+          <ion-toolbar>
+            <ion-title>Subheader</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 class="heightFull" style="background-color:#e80000;">
+        <ion-header>
+          <ion-navbar>
+            <ion-title>
+              <ion-calendar #calendar></ion-calendar>
+            </ion-title>
+          </ion-navbar>
+          <ion-toolbar>
+            <ion-title>Subheader</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--button ion-button secondary menuToggle>Toggle Menu</button-->
+</ion-content>
