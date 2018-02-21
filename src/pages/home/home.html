@@ -21,7 +21,7 @@
           </ion-toolbar>
         </ion-header>
         <div class="video-container heightFull">
-          <video fullscreen="fullscreen" autoplay="false" (ended)="videoEnded()" controls width="100%" height="100%">
+          <video fullscreen="fullscreen" autoplay="false" controls width="100%" height="100%">
            <source src="assets/videos/video.mp4" type="video/mp4">
          </video>
         </div>
@@ -34,9 +34,52 @@
             </ion-title>
           </ion-navbar>
           <ion-toolbar>
-            <ion-title>Subheader</ion-title>
+
+            <ion-buttons start class="floatLeft" floatLeft>
+              <button ion-button block start ion-button color="danger" clear text-left>
+                <ion-icon name="ios-arrow-round-back-outline"></ion-icon>
+              </button>
+              <button ion-button block start ion-button color="danger" clear text-left>
+                anterior
+              </button>
+            </ion-buttons>
+
+            <ion-buttons end class="floatRight">
+              <button end right ion-button color="danger" clear text-right>
+                <ion-icon name="ios-arrow-round-forward-outline"></ion-icon>
+              </button>
+              <button ion-button block start color="danger" clear text-left>
+                siguiente
+              </button>
+            </ion-buttons>
           </ion-toolbar>
         </ion-header>
+        <ion-content>
+          <ion-card class="noborder">
+  <img src="assets/imgs/failure.jpg" class="absolute"/>
+  <ion-card-content>
+    <ion-card-title>
+      <h5>En un Futuro Próximo...</h5>
+      <h1>Failure as
+      Opportunity</h1>
+    </ion-card-title>
+    <h3>
+      ¡Asume riesgos
+      y atrévete a equivocarte!
+    </h3>
+    <p>
+      Viernes 28 Febrero. 10:00 - 14:00.
+      Paseo de la Castellana 122
+    </p>
+    <button start right ion-button color="danger">
+      más información
+    </button>
+
+  </ion-card-content>
+</ion-card>
+
+        </ion-content>
+
       </ion-col>
       <ion-col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 class="heightFull" style="background-color:#e80000;">
         <ion-header>
