@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { VideoPlayer } from '@ionic-native/video-player';
+//import { VideoPlayer } from '@ionic-native/video-player';
 
 import { DatePicker } from '@ionic-native/date-picker';
 import { Calendar } from '@ionic-native/calendar';
@@ -20,7 +20,8 @@ export class HomePage {
     platform: Platform,
     private datePicker: DatePicker,
     private calendar: Calendar,
-    private videoPlayer: VideoPlayer) {
+  //  private videoPlayer: VideoPlayer
+  ) {
     platform.ready().then(() => {
       let options = {
         date: new Date(),
